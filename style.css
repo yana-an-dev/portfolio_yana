@@ -1,0 +1,41 @@
+:root {
+  --background-color: white;
+  --backbround-color_g: #a7ffeb;
+}
+
+.skills {
+  background-color: var(--backbround-color_g);
+}
+
+body {
+  margin: 0;
+}
+button {
+  padding: 0;
+  border: none;
+  background: none;
+}
+.main {
+  background-image: url(img/home_background.png);
+}
+.bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.bar__left--logo {
+  display: flex;
+  flex-direction: row;
+  width: 50px;
+}
+.logo {
+  width: 50px;
+  height: 30px;
+}
+.bar__right--menu {
+  display: flex;
+  padding: 20px;
+}
+.menu__bar--home {
+  padding-right: 10px;
+}
