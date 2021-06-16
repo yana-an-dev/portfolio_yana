@@ -128,6 +128,15 @@ p {
   border-radius: var(--size-border-radius);
 }
 
+.navbar__toggle-btn {
+  position: absolute;
+  right: 32px;
+  font-size: 24px;
+  color: var(--color-grey);
+  display: none;
+  top: 5px;
+}
+
 /*Home(Sweet home><) */
 #home {
   background: url("img/home_bg3.png") center/cover no-repeat;
@@ -140,8 +149,8 @@ p {
   border-radius: 50%;
   border: 2px solid var(--color-light-white);
 }
-.home__title,
-.home__description {
+.home__title {
+  color: var(--color-grey);
 }
 
 .home__contact {
@@ -429,4 +438,37 @@ p {
 .contact__links i:hover {
   transform: scale(1.1);
   color: var(--color-dark-grey);
+}
+
+/* For below 768px screen width */
+@media screen and (max-width: 768px) {
+  .navbar__toggle-btn {
+    display: block;
+  }
+  #navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .navbar__menu {
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    display: none;
+  }
+  .about__majors {
+    flex-direction: column;
+  }
+  .major {
+    margin-bottom: 38px;
+  }
+  .skillset {
+    flex-direction: column;
+  }
+  .work__projects {
+    flex-grow: 1;
+  }
+  .testimonial__avatar {
+    width: 80px;
+    height: 80px;
+  }
 }
