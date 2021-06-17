@@ -104,6 +104,7 @@ p {
   padding: 8px;
   width: 100%;
   transition: all var(--animation-duration) ease-in-out;
+  z-index: 1;
 }
 
 #navbar.navbar--dark {
