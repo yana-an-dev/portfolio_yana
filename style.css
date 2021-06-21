@@ -185,6 +185,7 @@ p {
   margin: auto;
 }
 .section__container {
+  position: relative;
   max-width: 1200px;
   margin: auto;
 }
@@ -448,6 +449,29 @@ p {
 .contact__links i:hover {
   transform: scale(1.1);
   color: var(--color-dark-grey);
+}
+
+/*Scroll*/
+
+.arrow__up {
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  font-size: var(--font-medium);
+  color: var(--color-white);
+  border: solid 1px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: var(--color-brown);
+  transition: all var(--animation-duration) ease-in;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.arrow__up.visible {
+  opacity: 1;
+  pointer-events: auto;
 }
 
 /* For below 768px screen width */
