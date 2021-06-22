@@ -63,6 +63,7 @@ button {
   border: none;
   outline: none;
   font-family: "Newsreader", serif;
+  padding: 0;
 }
 
 /* Typography */
@@ -303,9 +304,10 @@ p {
 .category__btn {
   border: 1px solid var(--color-dark-white);
   font-size: var(--font-small);
-  padding: 8px 40px;
+  padding: 8px 8px;
   border-radius: var(--size-border-radius);
   width: 200px;
+  position: relative;
 }
 
 .category__btn.selected,
@@ -317,20 +319,18 @@ p {
 .category__btn.selected .category__count,
 .category__btn:hover .category__count {
   opacity: 1;
-  top: 0;
 }
 .category__count {
-  background-color: orange;
-  border: 1px solid var(--color-orange);
+  background-color: var(--color-orange);
   border-radius: 50%;
   color: var(--color-light-white);
   width: 24px;
   height: 24px;
   line-height: 24px;
   display: inline-block;
-  position: relative;
-  top: -20px;
-  left: 4px;
+  position: absolute;
+  right: 35px;
+  top: 3px;
   opacity: 0;
   transition: all var(--animation-duration) ease-in;
 }
@@ -488,7 +488,20 @@ p {
 }
 
 /* For below 768px screen width */
+
 @media screen and (max-width: 768px) {
+  :root {
+    /* Font Size */
+    --font-large: 30px;
+    --font-medium: 18px;
+    --font-regular: 16px;
+    --font-small: 14px;
+    --font-micro: 12px;
+  }
+  .section {
+    padding: 16px;
+    padding-top: 40px;
+  }
   .navbar__toggle-btn {
     display: block;
   }
@@ -509,9 +522,11 @@ p {
   }
   .about__majors {
     flex-direction: column;
+    margin-top: 30px;
+    margin-bottom: 0px;
   }
   .major {
-    margin-bottom: 38px;
+    margin-bottom: 30px;
   }
   .skillset {
     flex-direction: column;
@@ -520,7 +535,28 @@ p {
     flex-grow: 1;
   }
   .testimonial__avatar {
-    width: 80px;
-    height: 80px;
+    width: 120px;
+    height: 120px;
+  }
+  .testimonial {
+    flex-direction: column;
+    align-items: center;
+  }
+  .testimonial__avatar:nth-child(even),
+  .testimonial__avatar:nth-child(odd) {
+    margin: 0;
+    margin-bottom: 8px;
+  }
+
+  .testimonial__speech-bubble {
+    order: 1;
+  }
+  .arrow__up {
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    line-height: 30px;
+    right: 16px;
+    bottom: 16px;
   }
 }
