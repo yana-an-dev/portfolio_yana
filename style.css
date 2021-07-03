@@ -195,7 +195,10 @@ p {
   margin: auto;
 }
 /*about*/
+#about{
+  padding-top: 80px;
 
+}
 .about__majors {
   display: flex;
   justify-content: space-between;
@@ -251,6 +254,7 @@ p {
 
 #skills {
   background: var(--color-yellow);
+  padding-top: 80px;
 }
 
 .skillset {
@@ -302,6 +306,9 @@ p {
 }
 
 /* Work */
+#work{
+  padding-top: 100px;
+}
 .work__categories {
   margin: 40px;
 }
@@ -409,6 +416,7 @@ p {
 /*Testimonials*/
 #testimonials {
   background-color: var(--color-light-white);
+  padding-top: 80px;
 }
 .testimonials {
   margin: 40px;
