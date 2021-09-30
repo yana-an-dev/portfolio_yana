@@ -17,6 +17,7 @@
   --color-orange: #feb546;
   --color-black-black: #000000;
   --color-brown: rgba(165, 101, 42, 0.774);
+  --color-light-skyblue: #61dafb;
 
   /* Font Size */
   --font-large: 48px;
@@ -40,7 +41,6 @@
 /* Universal tags */
 * {
   box-sizing: border-box;
-  /* 패딩을 포함해도 동일한 높이와 너비가 되도록 설정*/
 }
 
 body {
@@ -221,8 +221,8 @@ p {
   transition: all var(--animation-duration) ease;
 }
 .major__icon:hover i {
-  color: var(--color-light-grey);
-  transform: rotate(-30deg) scale(1.1);
+  color: var(--color-light-skyblue);
+  transform: rotate(-20deg) scale(1.1);
 }
 
 .major__title,
